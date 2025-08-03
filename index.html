@@ -4,25 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project {
+            background: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Hello from GitHub Pages!</p>
+        <h1>Hello from GitHub Pages!</h1>
+        <p>This site is live.</p>
     </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I'm Prince, a beginner Python developer learning web and data science.</p>
+    </section>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <ul>
-            <li><strong>Calculator App</strong> – Basic arithmetic calculator using Python</li>
-            <li><strong>To-Do List</strong> – Simple task tracker made with HTML/CSS/JS</li>
-            <li><strong>Data Visualizer</strong> – Python + Matplotlib for data graphs</li>
-        </ul>
-    </section>
 
-    <footer>
-        <p>© 2025 Prince Singh</p>
-    </footer>
+        <div class="project">
+            <h3>🧮 Python Calculator</h3>
+            <p>A simple calculator made in Python that performs basic arithmetic operations.</p>
+            <pre><code>
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+print("5 + 3 =", add(5, 3))
+            </code></pre>
+            <p><a href="https://github.com/prince870-git/python-calculator" target="_blank">View Code on GitHub</a></p>
+        </div>
+
+        <div class="project">
+            <h3>📝 To-Do List (HTML/JS)</h3>
+            <p>A simple task-tracking app built with HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project">
+            <h3>📊 Data Visualizer</h3>
+            <p>A Python app using Matplotlib to visualize CSV data.</p>
+        </div>
+    </section>
 </body>
 </html>
